@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+body {
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.headerInside {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    line-height: 50px;
+    width: 95px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+    padding-left: 73px;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.logo span {
+    font-weight: 400;
+    color: #f38191;
+}
+
+.searchWrap {
+    width: 400px;
+    display: flex;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    margin-left: 37px;
+}
+
+.searchBrowse {
+    padding: 12px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.searchWrap input {
+    border: none;
+    padding: 0 4px;
+    flex-grow: 1;
+}
+
+.searchWrap button {
+    width: 36px;
+    border: none;
+    border-left: 1px solid #e6e6e6;
+    background: white;
+}
+
+.searchWrap button i {
+    color: #a4a4a4;
+}
+
+.headerCart {
+    margin-left: auto;
+    margin-right: 26px;
+}
+
+.accountBtn {
+    background-color: #f16d7f;
+    padding: 13px 19px;
+    border: none;
+}
+
+.topNav {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 170px;
+    box-sizing: border-box;
+}
+
+.topNav a {
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    color: #222222;
+    font-weight: 700;
+}
+
+.topBanner {
+    height: 665px;
+    background: 
+        url(../images/topMan.png) no-repeat, 
+        #e8e8e8;
+    background-size: 600px;
+    background-position: 70% 0;
+}
+
+.topBannerContainer {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.topBannerSign {
+    height: 92px;
+    border-left: 12px solid #f16d7f;
+    padding-left: 12px;
+}
+
+.topSign, 
+.bottomSign {
+    color: #222222;
+    font-family: Lato, sans-serif;
+}
+
+.topSign {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 45px;
+}
+
+.bottomSign {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 17px;
+}
+
+.bottomSign span {
+    color: #f16d7f;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.specialOffers {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.menOffers {
+    background: url("../images/offersMen.png") no-repeat;
+    height: 542px;
+    width: 560px;
+    margin-top: 98px;
+    float: left;
+   
+    
+}
+
+.menOffers h2 {
+    display: inline-block;
+    width: 175px;
+    height: 82px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #ffffff;
+    margin-top: 26px;
+    padding-left: 19px;
+    letter-spacing: 0.45px; 
+    
+    
+}
+
+.menOffers span {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 900;
+}
+
+.womenOffers {
+    background: url("../images/offersWomen.png") no-repeat;
+    height: 261px; 
+    width: 560px;
+    float: right;
+    margin-top: 98px;
+}
+
+.womenOffers h2 {
+    display: inline-block;
+    width: 162px;
+    height: 82px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #ffffff;
+    margin-top: 26px;
+    padding-left: 19px;
+    letter-spacing: 0.45px;  
+}
+
+.womenOffers span {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 900;
+}
+
+.kidsOffers {
+    background: url("../images/offersKids.png") no-repeat;
+    height: 542px;
+    width: 560px;
+    float: right;
+    margin-top: 20px;
+}
+
+.kidsOffers h2 {
+    display: inline-block;
+    width: 180px;
+    height: 82px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #ffffff;
+    margin-top: 26px;
+    padding-left: 19px;
+    letter-spacing: 0.45px;
+}
+
+.kidsOffers span {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 900;
+}
+
+.accesoriesOffers {
+    background: url("../images/offersAccesories.png") no-repeat;
+    width: 560px;
+    height: 261px;
+    float: left;
+    margin-top: 20px;
+}
+
+.accesoriesOffers h2 {
+    display: inline-block;
+    width: 225px;
+    height: 82px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #ffffff;
+    margin-top: 26px;
+    padding-left: 19px;
+    letter-spacing: 0.45px;
+}
+
+.accesoriesOffers span {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 900;
+}
+
+.featuredItems {
+    width: 1140px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.featuredItems h2 { 
+    color: #222222;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 100px;
+    line-height: 20px;
+}
+
+.featuredItems span {
+    color: #9f9f9f;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px; 
+}
+
+.items {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.itemsUnit {
+   display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.itemsUnit h2 {
+    height: 11px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 700; 
+    margin-left: 0;
+    margin-top: 15px;
+    line-height: 20px; 
+    
+}
+
+.itemsUnit span {
+    width: 50px;
+    height: 15px;
+    color: #f16d7f;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 120px;
+    line-height: 30px;
+}
+
+.itemsSecond {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.allProduct {
+    margin-top: 100px;
+    margin-left: 480px;
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.items1:hover {
+    filter: brightness(30%);
+}
+
+
