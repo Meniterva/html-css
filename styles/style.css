@@ -13,6 +13,14 @@ header {
     margin: 0 auto;
 }
 
+@media (max-width: 1140px) {
+    .container {
+        width: auto;
+        margin: auto;
+        padding: 0 15px;
+    }
+}
+
 .headerInside {
     height: inherit;
     display: flex;
@@ -388,7 +396,7 @@ header {
     font-size: 32px;
     letter-spacing: 0.9px;
     color: #ffffff;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 60px;
@@ -401,10 +409,9 @@ header {
     width: 1609px;
     height: 438px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 450px;
     float: left;
     margin-left: 150px;
-   
 }
 
 .subscribe h2 {
@@ -419,10 +426,7 @@ header {
     position: absolute;
     margin-left: 947px;
     margin-top: 130px;
-    text-align: center;
-    
-    
-    
+    text-align: center;  
 }
 
 .subscribe span {
@@ -446,7 +450,7 @@ header {
     background-color: #e1e1e1; 
     opacity: 0.67;
     color: #222224;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 54px;
@@ -499,7 +503,7 @@ header {
     width: 200px;
     height: 20px;
     color: #f16d7f;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -511,7 +515,7 @@ header {
     width: 101px;
     height: 178px;
     color: #898989;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px;
@@ -527,6 +531,13 @@ header {
     height: 79px;
     float: left;
     margin-left: 150px;
+    margin-top: 50px;
+}
+
+@media (max-width: 520px) {
+    .copyrightsRight {
+        float: right;
+    }
 }
 
 .copyrightsRight i {
@@ -606,7 +617,7 @@ header {
 .productUnit h2 {
     height: 12px;
     color: #222222;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 13px;
     font-weight: 700;
     line-height: 20px;
@@ -663,7 +674,7 @@ header {
     width: 15px;
     height: 15px;
     color: #c0c0c0;
-    font-family: "Font Awesome";
+    font-family: Lato, sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
@@ -690,7 +701,7 @@ header {
    border: 1px solid #eaeaea;
    background-color: #ffffff; 
     color: #4a4a4a;
-   font-family: Lato;
+   font-family: Lato, sans-serif;
    font-size: 14px;
    font-weight: 700;
    text-transform: uppercase;
@@ -708,7 +719,7 @@ header {
     width: 1140px;
     margin-left: 350px;
     clear: both;
-    margin-top: 140px; 
+    margin-top: 200px; 
 }
 
 .adress {
@@ -721,7 +732,7 @@ header {
     width: 138px;
     height: 13px;
     color: #222222;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -733,7 +744,7 @@ header {
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     color: #b1b1b1;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 13px;
     font-weight: 300;
     margin-top: 20px;
@@ -745,7 +756,7 @@ header {
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     color: #4a4a4a;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -868,4 +879,540 @@ header {
     margin-top: 10px;
     margin-left: 40px;
 }
+
+.header {
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+}
+
+@media (max-width: 745px) {
+    .header {
+        height: auto;
+    }
+}
+
+.headerInsideCheckout {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 745px) {
+    .headerInsideCheckout {
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 745px) {
+    .headerInsideCheckout > div,
+    .headerInsideCheckout form {
+        margin-bottom: 15px;
+    }
+}
+
+.logoCheckout {
+    width: 165px;
+    line-height: 51px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 27px;
+    font-weight: 300;
+    padding-left: 60px;
+}
+
+@media (max-width: 745px) {
+    .logoCheckout {
+        width: auto;
+    }
+}
+
+.logoCheckout span {
+    color: #f16d7f;
+    font-weight: 400;
+}
+
+.searchWrapCheckout {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.searchBrowseCheckout {
+    height: inherit;
+    padding: 12px;
+    font-size: 14px;
+    color: #222222;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    border-right: 1px solid #e6e6e6;
+}
+
+@media (max-width: 745px) {
+    .searchBrowseCheckout {
+        padding: 11px;
+    }
+}
+
+.searchWrapCheckout input {
+    height: inherit;
+    padding: 0 3px;
+    border: none;
+    outline: none;
+}
+
+.searchWrapCheckout button {
+    height: inherit;
+    padding: 0 8px;
+    border: 0;
+    background: none;
+    border-left: 1px solid #e6e6e6;
+}
+
+.headerCartCheckout {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+@media (max-width: 745px) {
+    .headerCartCheckout {
+        display: none;
+    }
+}
+
+.accountBtn {
+    padding: 15px;
+    background-color: #f16d7f;
+    color: white;
+    border: none;
+}
+
+.topNavCheckout {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 740px) {
+    .topNavCheckout {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 425px) {
+    .topNavCheckout {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.topNavCheckout a:not(:last-child) {
+    margin-right: 45px;
+}
+
+@media (max-width: 425px) {
+    .topNavCheckout a:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+.topNavCheckout a {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #222222;
+}
+
+.topNavCheckout a:hover {
+    color: #f16d7f;
+}
+
+.newArrivalsWrap {
+    height: 150px;
+    background: #f8f3f4;
+}
+
+.newArrivals {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 520px) {
+    .newArrivals {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.newArrivals h1 {
+    margin: 0;
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.newArrivals nav a {
+    text-decoration: none;
+    color: #636363;
+}
+
+.newArrivals nav a:hover {
+    color: #f16d7f;
+}
+
+.newArrivals nav a:last-child {
+    font-weight: 700;
+    color: #f16d7f;
+}
+
+.shippingAddCheckout {
+    width: 974px;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 520px) {
+    .shippingAddCheckout {
+        flex-direction: column;
+    }
+}
+
+.shippAdd {
+    width: 293px;
+    height: 394px;
+}
+
+.register {
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+.shippingAddCheckout h2 {
+    width: 169px;
+    height: 13px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.register h2 {
+    width: 205px;
+    height: 11px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.register p {
+    width: 260px;
+    height: 12px;
+    color: #b3b2b2;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.register ul {
+    width: 152px;
+    height: 60px;
+    color: #222222;
+    font-family: Lato,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    list-style-type: none;
+    padding-top: 20px;
+    line-height: 30px;
+    padding: 0;
+}
+
+.register input {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #555555;
+    background-color: #ffffff;
+    margin-top: 20px; 
+    vertical-align:middle;
+    margin:-2px 0 0 0;  
+}
+
+.register button {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.quotes {
+    margin-top: 20px;
+    padding-bottom: 10px; 
+}
+
+.shippAdd_2 {
+    width: 390px;
+    height: 342px;
+    margin-top: 40px;
+}
+
+@media (max-width: 520px) {
+    .shippAdd_2 {
+        margin-left: 35px;
+    }  
+}
+
+.shippAdd_2 h2 {
+    width: 130px;
+    height: 11px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.shippAdd_2 p {
+    width: 108px;
+    height: 14px;
+    color: #b3b2b2;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.required h2 {
+    width: 100px;
+    height: 8px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.required span {
+    color: red;
+}
+
+.required input {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+}
+
+.required p {
+    width: 96px;
+    height: 12px;
+    color: #ff0d0d;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.shippAdd_2 button {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.shippAdd_2 a {
+    width: 111px;
+    height: 12px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.billInfo {
+    width: 1140px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 70px;
+    
+}
+
+.billInfo h2 {
+    width: 1140px;
+    height: 70px;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 72px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+
+.footCheck { 
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+    margin: 0 auto;   
+}
+
+@media (max-width: 520px) {
+    .footCheck {
+        flex-direction: column;
+    }
+}
+
+.footCheckLeft {
+    background: url(/images/footLeft.png) no-repeat;
+    height: 400px;
+    width: 799px;    
+}
+
+.footCheckLeft blockquote {
+    width: 497px;
+    height: 150px;
+    color: #222224;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    margin-top: 111px;
+    margin-left: 200px; 
+}
+
+.footCheckLeft img {
+    float: left;
+    padding-right: 20px;
+}
+
+.footCheckLeft h2 {
+    color: #f16d7f;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+.footCheckLeft p {
+    color: #222224;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 10px;
+    margin-left: 100px;
+}
+
+.buttonFoot {
+    margin-left: 300px;
+}
+
+.footCheckLeft button {
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+
+.footCheckLeft button:hover {
+    background-color: #f16d7f;
+}
+
+.footLine {
+    width: 1px; 
+}
+
+.footCheckRight {
+    background: url(/images/footRight.png) no-repeat;
+    height: 400px;
+    width: 799px;  
+}
+
+.infoFootRight {
+    width: 500px;
+    height: 122px;
+    margin-left: 92px;
+    margin-top: 105px;
+}
+
+.footCheckRight h2 {
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 40px;
+    color: #222224;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footCheckRight p {
+    letter-spacing: 0.35px;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    color: #222224;
+    text-align: center;
+}
+
+.footCheckRight input {
+    width: 334px;
+    height: 46px;
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    opacity: 0.67;
+    color: #222224;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 54px;
+    float: left;
+}
+
+.footCheckRight button {
+    width: 104px;
+    height: 50px;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+}
+
+
+
+
+
+
+
+
+
+
 
